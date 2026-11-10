@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nvidia 供應鏈地圖 | EcoSemi-Hub</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- 頂部導覽列 -->
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="../../index.html" class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-white">ES</div>
+                    <span class="text-lg font-bold tracking-tight">EcoSemi-Hub</span>
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+                <a href="../../index.html" class="hover:text-indigo-400 transition">首頁</a>
+                <a href="nvidia.html" class="text-indigo-400 font-semibold">供應鏈地圖 (Nvidia)</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主內容區 -->
+    <main class="max-w-4xl mx-auto px-6 py-12 flex-grow">
+        
+        <!-- 文章標頭 -->
+        <div class="mb-10 border-b border-slate-800 pb-8">
+            <div class="flex items-center space-x-2 mb-3">
+                <span class="px-3 py-1 text-xs font-semibold tracking-wider text-indigo-400 uppercase bg-indigo-950 rounded-full border border-indigo-800/50">
+                    Supply Chain Maps
+                </span>
+                <span class="text-xs text-slate-500">更新日期：2026-11-10</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 text-white">
+                Nvidia AI 晶片生態系與多維供應鏈地圖
+            </h1>
+            <p class="text-slate-400 text-lg leading-relaxed">
+                從架構設計、前端先進製程、最關鍵的 CoWoS 封裝瓶頸，到高頻寬記憶體（HBM）與伺服器整機組裝，全面剖析 Nvidia 緊密交織的全球供應網絡。
+            </p>
+        </div>
+
+        <!-- 供應鏈層級拆解 -->
+        <div class="space-y-8">
+            
+            <!-- Layer 1 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+                <div class="flex items-center space-x-3 mb-4">
+                    <span class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center font-bold text-sm border border-indigo-500/30">01</span>
+                    <h2 class="text-xl font-bold text-white">前端晶片設計與邏輯代工 (Logic & Foundry)</h2>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                    Nvidia 作為無廠半導體（Fabless）設計巨頭，其旗艦 AI 架構高度依賴全球最頂尖的晶圓製造與微影設備支援。
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                        <span class="text-indigo-400 font-semibold block mb-1">主要晶圓代工 (Foundry)</span>
+                        <p class="text-slate-400"><strong>台積電 (TSMC)</strong>：獨家或絕大部分高階先進製程（N3 / N4 系列）晶圓代工。</p>
+                    </div>
+                    <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                        <span class="text-indigo-400 font-semibold block mb-1">關鍵設備支援 (Equipment)</span>
+                        <p class="text-slate-400"><strong>艾司摩爾 (ASML)</strong>：EUV 極紫外光微影設備，為先進製程微縮的根本命脈。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Layer 2 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+                <div class="flex items-center space-x-3 mb-4">
+                    <span class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center font-bold text-sm border border-indigo-500/30">02</span>
+                    <h2 class="text-xl font-bold text-white">先進封裝與載板 (Advanced Packaging & Substrates)</h2>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                    當前 AI 算力擴張的最大瓶頸所在。將多個運算晶片與高頻寬記憶體整合的封裝技術，成了左右出貨速度的關鍵卡關點。
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                        <span class="text-indigo-400 font-semibold block mb-1">CoWoS 封裝與擴產</span>
+                        <p class="text-slate-400">以 <strong>TSMC CoWoS-L</strong> 為主軸，同步外溢至日月光等封測體系緩解產能。</p>
+                    </div>
+                    <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                        <span class="text-indigo-400 font-semibold block mb-1">高階載板 (Substrate)</span>
+                        <p class="text-slate-400"><strong>Ibiden (揖斐電)</strong> 等日系大廠供應之 ABF 載板，為多晶片模組不可或缺的載體。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Layer 3 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+                <div class="flex items-center space-x-3 mb-4">
+                    <span class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center font-bold text-sm border border-indigo-500/30">03</span>
+                    <h2 class="text-xl font-bold text-white">記憶體與整機組裝 (Memory & Rack Integration)</h2>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                    確保資料吞吐量的 HBM 記憶體，以及最終將晶片、散熱與電源整合為超級電腦伺服器機櫃的下游體系。
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                        <span class="text-indigo-400 font-semibold block mb-1">HBM 高頻寬記憶體</span>
+                        <p class="text-slate-400">主要由 <strong>SK Hynix (SK海力士)</strong>、<strong>Micron (美光)</strong> 與 <strong>Samsung (三星)</strong> 提供。</p>
+                    </div>
+                    <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                        <span class="text-indigo-400 font-semibold block mb-1">伺服器機櫃組裝 (Full Rack)</span>
+                        <p class="text-slate-400">由台灣代工大廠（如 <strong>鴻海 Foxconn</strong>、廣達等）負責 NVL72 等大規模 AI 伺服器機櫃系統整合。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
+        &copy; 2026 EcoSemi-Hub. Powered by AGENTS.md workflow.
+    </footer>
+
+</body>
+</html>
